@@ -1,0 +1,45 @@
+mutation{
+  createCourse(input:{
+    courseName:"Web development Bootcamp"
+    price:199
+    stack:MOBILE
+    teachingAssists:[
+      {
+        firstName:"saurabh"
+        lastName:"sanap"
+        experience:2
+      },
+      {
+        firstName:"Rohit"
+        lastName:"buchkul"
+        experience:1
+      }
+    ]
+  }){
+    id,
+    courseName,
+  }
+}
+
+
+
+
+
+
+{
+  getCourse(id: "fMAoGD0Y4rb0R9RdHik0I") {
+    id
+    courseName
+    price
+    teachingAssists {
+      firstName
+      lastName
+      experience
+    }
+    email
+    stack
+  }
+}
+
+
+
